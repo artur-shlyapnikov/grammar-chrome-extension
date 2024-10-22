@@ -57,3 +57,7 @@ A Chrome extension that helps improve your writing with grammar corrections and 
 ## Privacy
 
 Your API key is stored securely in Chrome's storage sync and is only used to communicate with the Gemini API.
+
+---
+
+Anton, Ivan, privet!
