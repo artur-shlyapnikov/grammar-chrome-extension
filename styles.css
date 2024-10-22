@@ -1,0 +1,79 @@
+.gemini-helper-button {
+    position: absolute;
+    background: #E8F0FE;
+    color: #4285f4;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    z-index: 10000;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1;
+    padding: 0;
+    transition: all 0.2s ease;
+}
+
+.gemini-helper-button:hover {
+    background: #d2e3fc;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.gemini-helper-button.gemini-helper-loading {
+    font-size: 16px;
+    cursor: wait;
+}
+
+.gemini-helper-button.gemini-helper-loading::after {
+    content: '.';
+    animation: loading 1.5s steps(3, end) infinite;
+    width: 12px;
+    display: inline-block;
+    text-align: left;
+}
+
+@keyframes loading {
+    0% {
+        content: '.';
+    }
+
+    33% {
+        content: '..';
+    }
+
+    66% {
+        content: '...';
+    }
+
+    100% {
+        content: '.';
+    }
+}
+
+.gemini-helper-menu {
+    position: absolute;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 8px 0;
+    z-index: 10001;
+    min-width: 150px;
+}
+
+.gemini-helper-menu-item {
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    color: #3c4043;
+    font-size: 14px;
+}
+
+.gemini-helper-menu-item:hover {
+    background: #f8f9fa;
+}

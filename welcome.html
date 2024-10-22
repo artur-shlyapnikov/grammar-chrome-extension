@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Welcome to Gemini Grammar Helper</title>
+    <style>
+        body {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .container {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 24px;
+        }
+
+        h1 {
+            color: #4285f4;
+            margin-bottom: 24px;
+        }
+
+        .step {
+            margin-bottom: 20px;
+        }
+
+        .step-number {
+            background: #4285f4;
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        button {
+            background: #4285f4;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        button:hover {
+            background: #5c95f5;
+        }
+
+        .status {
+            margin-top: 8px;
+            font-size: 14px;
+        }
+
+        .success {
+            color: green;
+        }
+
+        .error {
+            color: red;
+        }
+
+        .link {
+            color: #4285f4;
+            text-decoration: none;
+        }
+
+        .link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to Gemini Grammar Helper! </h1>
+
+        <div class="step">
+            <span class="step-number">1</span>
+            <strong>Get your Gemini API key</strong>
+            <p>
+                Visit <a href="https://aistudio.google.com/app/apikey" target="_blank" class="link">Google AI Studio</a>
+                to create your API key.
+                If you don't have an account, you'll need to create one first.
+            </p>
+        </div>
+
+        <div class="step">
+            <span class="step-number">2</span>
+            <strong>Enter your API key below</strong>
+            <p>
+                This key will be stored securely in your browser and is needed for the extension to work.
+            </p>
+            <input type="password" id="apiKey" placeholder="Enter your Gemini API key">
+            <button id="saveKey">Save API Key</button>
+            <div id="status" class="status"></div>
+        </div>
+
+        <div class="step">
+            <span class="step-number">3</span>
+            <strong>Start using the extension</strong>
+            <p>
+                Once your API key is saved, you can start using the extension:
+            </p>
+            <ul>
+                <li>Click into any text field on a webpage</li>
+                <li>Look for the "G" button that appears</li>
+                <li>Click it to see grammar and clarity improvement options</li>
+            </ul>
+        </div>
+    </div>
+    <script src="welcome.js"></script>
+</body>
+
+</html>
